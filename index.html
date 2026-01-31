@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARA's - How Tasty!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=local_dining" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader-ring"></div>
+        <div class="loading-text">Loading...</div>
+    </div>
+
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+
+    <div class="container">
+    <div class="bg-img">
+        <img src="images/background.png" alt="">
+    </div>
+        <div class="header" id="mainHeader">
+            <div class="logo"> <span class="material-symbols-outlined">local_dining</span></div>
+          
+            <h1 class="brand-name">Kara's</h1>
+            <p class="tagline">How Tasty!</p>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+            <div class="menu-item initial-load" data-section="introduction">
+                <div class="menu-badge">IN</div>
+                <div class="menu-title">Introduction</div>
+            </div>
+            <div class="menu-item initial-load" data-section="services">
+                <div class="menu-badge">MU</div>
+                <div class="menu-title">Menu</div>
+            </div>
+            <div class="menu-item initial-load" data-section="gallery">
+                <div class="menu-badge">GL</div>
+                <div class="menu-title">Gallery</div>
+            </div>
+            <div class="menu-item initial-load" data-section="testimonials">
+                <div class="menu-badge">CR</div>
+                <div class="menu-title">Customer Reviews</div>
+            </div>
+            <div class="menu-item initial-load" data-section="about">
+                <div class="menu-badge">AB</div>
+                <div class="menu-title">About</div>
+            </div>
+            <div class="menu-item initial-load" data-section="contact">
+                <div class="menu-badge">ON</div>
+                <div class="menu-title">ORDER NOW</div>
+            </div>
+        </div>
+
+        <div id="contentArea">
+            <div class="content-section" id="introduction">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                       <span class="material-symbols-outlined">local_dining</span>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Kara's</h3>
+                        <p>How Tasty!</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+                
+                <div class="intro-hero">
+                    <div class="intro-hero-content">
+                        
+                        <h1 class="intro-headline">Your place to <span>chill</span> and connect.</h1>
+                        <p class="intro-subtext">It’s a place where good coffee meets delicious food and irresistible desserts.
+Whether you’re here to hang out with friends, study, work, or just relax, we’ve got you covered.
+From freshly brewed drinks to satisfying meals and sweet treats, everything is prepared to match your vibe.
+Come for the coffee, stay for the food, and enjoy the moments.</p>
+                        
+                    </div>
+                </div>
+
+                
+
+                <div class="intro-values">
+                    <div class="value-card">
+                        <div class="value-number">01</div>
+                        <h3>Customer Satisfaction</h3>
+                        <p>We care about every detail to make sure our guests feel happy, comfortable, and valued every time they visit.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">02</div>
+                        <h3>Quality Food & Desserts</h3>
+                        <p>From delicious meals to freshly made desserts, we serve quality flavors prepared with care and love.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-number">03</div>
+                        <h3>Fresh Coffee & Cozy Atmosphere</h3>
+                        <p>Enjoy freshly brewed coffee in a warm, cozy space where you can relax, work, and hang out with friends.</p>
+                    </div>
+                </div>
+
+                <div class="intro-tech">
+                    <p class="tech-label"></p>
+                    <div class="tech-marquee">
+                        <div class="tech-track">
+                            <span class="tech-item">🥐</span>
+                            <span class="tech-item">🍪</span>
+                            <span class="tech-item">🥗</span>
+                            <span class="tech-item">☕</span>
+                            <span class="tech-item">🥪</span>
+                            <span class="tech-item">🍰</span>
+                            <span class="tech-item">🍧</span>
+                            <span class="tech-item">🧇</span>
+                            <span class="tech-item">🍝</span>
+                            <span class="tech-item">🍪</span>
+                            <span class="tech-item">🥗</span>
+                            <span class="tech-item">☕</span>
+                            <span class="tech-item">🥪</span>
+                            <span class="tech-item">🥐</span>
+                            <span class="tech-item">🍪</span>
+                            <span class="tech-item">🥗</span>
+                            <span class="tech-item">☕</span>
+                            <span class="tech-item">🥪</span>
+                            <span class="tech-item">🍰</span>
+                            <span class="tech-item">🍧</span>
+                            <span class="tech-item">🧇</span>
+                            <span class="tech-item">🍝</span>
+                            <span class="tech-item">🍪</span>
+                            <span class="tech-item">🥗</span>
+                            <span class="tech-item">☕</span>
+                            <span class="tech-item">🥪</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="services">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                      <span class="material-symbols-outlined">local_dining</span>
+                    </div>
+                    <div class="small-brand">
+                        
+                        <h3>Kara's</h3>
+                        <p>How Tasty!</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Our Menu</h2>
+                    <p class="section-subtitle"></p>
+                </div>
+
+                <div class="tabs-container">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" onclick="switchTab(this, 'development')">Starters</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'design')">Kitchen Favorites</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'consulting')">Sweets</button>
+                        <button class="tab-btn" onclick="switchTab(this, 'support')">Drinks</button>
+                    </div>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="development">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/taco.png" alt="">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Loaded Nachos</h4>
+                                        <p>Description: Melted cheddar, jalapeños, sour cream, and fresh homemade guacamole.</p>
+                                        <h4>14.50$</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/shrimp.png"alt=>
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Dynamite Shrimp</h4>
+                                        <p>Description: Crispy shrimp tossed in a spicy and creamy sriracha mayo.</p>
+                                        <h4>$16.90</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/fries.png" alt="">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Truffle Parmesan Fries</h4>
+                                        <p>Description: Double-fried crispy potatoes topped with truffle oil and fresh herbs.</p>
+                                        <h4>$9.50</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/mozerella.png" alt="">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Mozzarella Sticks</h4>
+                                        <p>Description:Crispy on the outside, gooey on the inside. Six premium mozzarella sticks breaded with Italian herbs, fried to golden perfection. Served with our signature spicy marinara dipping sauce.</p>
+                                        <h4>$11.00</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="design">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/budha.png" alt="">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>The Buddha Bowl</h4>
+                                        <p>Description: A healthy mix of quinoa, avocado, roasted chickpeas, kale, and tahini dressing.</p>
+                                        <h4>$15.50</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/chicken.png" alt="">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Chicken Caesar 2.0</h4>
+                                        <p>Description: Grilled chicken breast, baby lettuce, sourdough croutons, and aged parmesan.</p>
+                                        <h4>$17.00</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/burger.png" alt="">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>The OG Burger</h4>
+                                        <p>Description: Wagyu beef patty, double cheddar, caramelized onions, and our secret Vibe sauce.</p>
+                                        <h4>$17.00</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/chburger.png" alt="">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Crispy Chicken Sando</h4>
+                                        <p>Description: Spicy fried chicken, creamy coleslaw, and pickles on a toasted brioche bun.</p>
+                                        <h4>$17.00</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                
+                               
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="consulting">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/lotus.png" alt="">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Lotus Biscoff Pancakes</h4>
+                                        <p>Description: Fluffy pancake stack topped with Lotus Biscoff cream and crushed biscuits.</p>
+                                        <h4>$13.50</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/chesscake.png" alt="Technology Audit">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>San Sebastian Cheesecake</h4>
+                                        <p>Description: The original burnt cheesecake served with warm Belgian chocolate sauce.</p>
+                                        <h4>$14.00</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/tiramisu.png" alt="Process Optimization">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Tiramisu</h4>
+                                        <p>A classic Italian masterpiece. Layers of light and airy mascarpone cream meet ladyfingers soaked in our signature double-shot espresso. Finished with a heavy dust of premium cocoa powder.<p>
+                                            <h4>$14.00</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="support">
+                            <div class="services-list">
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/latte.png" alt="">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Iced Spanish Latte</h4>
+                                        <p>Description: Perfect balance of sweetened condensed milk and double shot espresso over ice.</p>
+                                        <h4>$4.50</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/water.png" alt="Training">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Water</h4>
+                                        <h4>$2.50</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                                <div class="service-row">
+                                    <div class="service-row-icon">
+                                        <img src="images/lemonade.png" alt="Managed Services">
+                                    </div>
+                                    <div class="service-row-content">
+                                        <h4>Lemonade</h4>
+                                        <p>Freshly squeezed lemons blended with a hint of sweetness, served ice-cold for the ultimate refreshing experience.</p>
+                                        <h4>$2.50</h4>
+                                    </div>
+                                    <div class="service-row-arrow">→</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="gallery">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                       <span class="material-symbols-outlined">local_dining</span>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Kara's</h3>
+                        <p>How Tasty!</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Our Gallery</h2>
+                    
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+                  
+                    
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/musteri1.png" alt="Project 1">
+                       
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="images/musteri2.png" alt="Project 2">
+                        <div class="gallery-overlay">
+                           
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="images/musteri3.png" alt="Project 3">
+                        <div class="gallery-overlay">
+                           
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="web">
+                        <img src="images/musteri4.png" alt="Project 4">
+                        <div class="gallery-overlay">
+                            
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="mobile">
+                        <img src="images/barista.png" alt="Project 5">
+                        <div class="gallery-overlay">
+                            
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-category="branding">
+                        <img src="images/burgerlerle.png" alt="Project 6">
+                        <div class="gallery-overlay">
+                          
+                        </div>
+                        
+                    </div>
+                     <div class="gallery-item" data-category="branding">
+                        <img src="images/kedi.png" alt="Project 6">
+                        <div class="gallery-overlay">
+                          
+                        </div>
+                        
+                    </div>
+                     <div class="gallery-item" data-category="branding">
+                        <img src="images/guuyz.png" alt="Project 6">
+                        <div class="gallery-overlay">
+                          
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="testimonials">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                       <span class="material-symbols-outlined">local_dining</span>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Kara's</h3>
+                        <p>How Tasty!</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Customer Reviews</h2>
+                    <p class="section-subtitle">What our clients say about us</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Hooop! It's in my genes, I know quality when I see it! This lemonade feels like the ship I’ve been waiting for has finally arrived. And those pancakes? Fluffy like clouds! My sugar is dropping from all this beauty—put the tab on Metin Uncle's account!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/ismailabi.png" alt="Client 1">
+                            </div>
+                            <div class="author-info">
+                                <h5>İsmail</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Honestly, this place is a whole mood. The aesthetic is giving pure healing energy. ☁️ That San Sebastian cheesecake felt like a 'Snooze' moment—I didn't want to wake up from it. And the lemonade? So crisp, it literally cleared my soul. If you need me, I’ll be tucked away in the corner booth, romanticizing my life. 10/10."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/sza.jpeg" alt="Client 2">
+                            </div>
+                            <div class="author-info">
+                                <h5>SZA</h5>
+                                <p>⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">I paid the bill.</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/blok3.png" alt="Client 3">
+                            </div>
+                            <div class="author-info">
+                                <h5>Blok3</h5>
+                                <p>⭐⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Total lack of vision! This plate is a disaster and so tacky. Do you honestly think this is 'style,' honey? It's embarrassing. Zero taste, zero elegance. You’re not with me. You have no style!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="images/dogulu-kemal-image.webp" alt="Client 4">
+                            </div>
+                            <div class="author-info">
+                                <h5>Kemal Doğulu</h5>
+                                <p>⭐</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="about">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                       <span class="material-symbols-outlined">local_dining</span>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Kara's</h3>
+                        <p>How Tasty!</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">Our story, mission, and values</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Welcome to Our Vibe!</h3>
+                        <p>We aren't just a cafe; we’re your new favorite getaway. Whether you’re looking for a fresh start to your morning, a modern spot to hang out with friends, or a cozy corner for a Sunday family brunch, we’ve got the perfect vibe waiting for you.
+
+Our mission is simple: to serve happiness in every cup and on every plate. From our signature Lotus Biscoff Pancakes that feel like a warm hug, to our ice-cold lemonade that defines refreshment, everything we create is crafted with love and the finest ingredients.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/ourt.png" alt="Our Team">
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-section" id="contact">
+                <div class="section-header-small">
+                    <div class="small-logo">
+                       <span class="material-symbols-outlined">local_dining</span>
+                    </div>
+                    <div class="small-brand">
+                        <h3>Kara's</h3>
+                        <p>How Tasty!</p>
+                    </div>
+                </div>
+                <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+                <div class="section-header">
+                    <h2 class="section-title">Order Now</h2>
+                    <p class="section-subtitle">Can’t make it to the cafe? No worries! We’ll bring the vibe right to your doorstep. Your favorite treats are just a few clicks away.</p>
+                </div>
+
+                <div class="contact-grid">
+                  
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Hayal Sokak, No: 99 İlçe/İl: Merkez / Ütopya</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>karas@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+90 (534) 222-2222</p>
+                            </div>
+                        </div>
+                    </div>
+
+<div class="delivery-platforms">
+  <p>Order via your favorite app:</p>
+  <div class="icon-group">
+    <a href="GETIR_LINK" target="_blank" class="delivery-link">
+      <img src="images/Getir_logo.png" alt="Getir">
+    </a>
+    <a href="https://www.yemeksepeti.com/restaurants/new?lng=29.01076&lat=41.07683&vertical=restaurants" target="_blank" class="delivery-link">
+      <img src="images/Yemeksepeti-2.jpg" alt="Yemeksepeti">
+    </a>
+    <a href="https://trendyolgo.com/" target="_blank" class="delivery-link">
+      <img src="images/trendyol.png" alt="Trendyol Go">
+    </a>
+  </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="mainFooter">
+            <p>Crafted with passion. Design by <a href="https://github.com/tubaNkara" target="_blank">Tubanur KARA</a></p>
+        </footer>
+    </div>
+<script src="scripts.js"></script>
+</body>
+</html>
