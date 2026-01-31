@@ -16,5 +16,9 @@ This project is a modern and responsive cafe & restaurant website designed to sh
 - CSS3
 - JavaScript
 
+## Live Demo
+https://tubankara.github.io/HowTasty/
+
+
 ## 👩‍💻 Author
 Tubanur Kara
